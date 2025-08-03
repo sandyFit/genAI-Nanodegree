@@ -1,4 +1,4 @@
-Generative AI Nanodegree
+# Generative AI Nanodegree
 
 ## Introduction and Overview (Summary)
 
@@ -24,7 +24,8 @@ Understand what foundation models are, how they’re trained on large datasets, 
 ### Adapting Foundation Models
 Learn techniques to customize pre-trained models for specific tasks. Topics include prompt engineering, prompt tuning, and parameter-efficient fine-tuning methods like LoRA and adapters, with practical examples of adapting models using minimal compute.
 
-**Project** 
+**Project:** [Apply Lightweight Fine-Tuning to a Foundation Model](./project1_Lightweight_Fine-Tunning)
+
 
 ---
 
