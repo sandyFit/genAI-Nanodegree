@@ -175,8 +175,7 @@ To extend CompostPal:
 4. Add location-based features using coordinate data
 
 ## 📄 License
-
-This project uses NYC Open Data, which is publicly available. Please respect OpenAI's API and Udacity's terms of service when using the embedding and completion services.
+[License](./LICENSE.txt)
 
 ## 🙏 Acknowledgments
 
