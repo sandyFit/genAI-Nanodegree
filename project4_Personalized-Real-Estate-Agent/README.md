@@ -1,7 +1,3 @@
-Got it! I'll enhance the notebook documentation and add a clear project structure section based on the info you shared. Here's a polished version for your HomeMatch Real Estate Listings App documentation, including a project structure overview:
-
----
-
 # HomeMatch Real Estate Listings App
 
 ## Overview
@@ -69,7 +65,7 @@ An OpenAI API Key is required to access the AI models. Place your API key in the
 
 ```env
 OPENAI_API_KEY=your_openai_api_key_here
-OPENAI_API_BASE=https://api.openai.com/v1  # Optional: custom API endpoint
+OPENAI_API_BASE=https://api.openai.com/v1  
 ```
 
 ### Required Dependencies
@@ -98,7 +94,7 @@ Ensure the following packages are installed (see `requirements.txt`):
 ├── key.env                # Environment variables file containing API keys
 ├── listings.json          # Sample or generated real estate listings dataset
 ├── requirements.txt       # Python dependencies for the project
-├── services.py            # Core business logic including listing generation, search, and personalization
+├── services.py            # Core business logic (listing generation, search, personalization)
 └── tester.py              # Test scripts to validate functionalities and workflows
 ```
 
@@ -110,3 +106,55 @@ Ensure the following packages are installed (see `requirements.txt`):
 * **`services.py`**: Implements main logic such as LLM calls, JSON parsing, embedding management, and personalized descriptions.
 * **`tester.py`**: Contains automated or manual tests for verifying different parts of the system.
 
+---
+
+## 📱 Interactive Testing Widget
+
+* **Real-time Query Interface**: Test search functionality with natural language queries and immediate visual feedback
+* **Pre-built Test Scenarios**: One-click example queries covering family homes, luxury properties, budget constraints, and investment opportunities
+* **Dual-mode Results**: View both original property listings and AI-generated personalized descriptions side-by-side
+* **Configurable Testing**: Adjustable result limits and scrollable output area for comprehensive result analysis
+* **Development Tools**: Built-in error handling, clear functionality, and step-by-step workflow visualization for debugging and refinement
+
+### Simple Setup
+**Import your HomeMatch app and the tester**
+<br>
+```
+    from services import HomeMatchApp
+   
+    from tester import create_simple_tester
+```
+<br>
+
+**Initialize your app**
+<br>
+```
+    app = HomeMatchApp(api_key="your-openai-key")
+    
+    app.load_listings("listings.json")  # or generate new one
+```
+<br>
+
+**Create and display the tester interface**
+<br>
+```
+    tester = create_simple_tester(app)
+```
+
+### Quick Setup
+
+**This handles app creation, data loading, and tester display**
+<br>
+```
+    from tester import quick_test_setup
+
+    app, tester = quick_test_setup(
+        api_key="your-openai-key",
+        generate_new=False  # Set to True to generate fresh listings
+    )
+```
+---
+
+
+## 📄 License
+[License](./LICENSE.txt)
